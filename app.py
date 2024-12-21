@@ -15,8 +15,3 @@ def hello():
 @app.route("/env")
 def env():
     return str(json.dumps(dict(os.environ), indent=2))
-
-server = Process(target=app.run(debug=False,host='0.0.0.0'))
-server.start()
-server.terminate()
-server.join()
