@@ -16,4 +16,4 @@ def env():
 
 if __name__ == '__main__':
     app.run(debug=False,host='0.0.0.0')
-    return 0
+    sys.exit()
